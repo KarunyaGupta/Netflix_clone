@@ -74,7 +74,8 @@ nav button {
 
 .header-content h1 {
     font-size: 40px;
-    line-height: 70px;
+    /* line-height: 70px; */
+    margin-bottom: 20px;
     font-weight: 600;
     text-align: center;
 }
@@ -136,17 +137,19 @@ input[type="email"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    opacity: 0.3;
+    opacity: 0.2;
     /* margin-bottom: 20px; */
 }
 input[type="email"]::placeholder {
-    color: black; 
+    color: black;
+    text-decoration: solid; 
 }
   
 button {
     background-color: #dc3545;
     color: white;
-    padding: 14px 20px;
+    padding:14px;
+    width:fit-content;
     border: none;
     border-radius: 4px;
     font-size: 18px;
@@ -287,6 +290,7 @@ input[type="radio"] {
 }
 
 
+
 .footer .col {
     flex-basis: 25%;
     flex-grow: 1;
@@ -317,6 +321,7 @@ input[type="radio"] {
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Media Querries for small Design */
@@ -333,6 +338,9 @@ input[type="radio"] {
 
     nav .language-btn {
         padding: 4px 8px;
+    }
+    .row{
+        display: flex;
     }
 
     .header-content {
@@ -388,6 +396,12 @@ input[type="radio"] {
     label::after {
         font-size: 22px;
 
+    }
+    input[type="email"] {
+        width: 250px;
+    }
+    #footer-button{
+        display:none;
     }
 
 
